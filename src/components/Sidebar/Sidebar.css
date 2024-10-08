@@ -1,0 +1,171 @@
+/* .sidebar{
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F0F4F9;
+    padding: 25px 15px;
+}
+
+.sidebar img{
+    width: 20px;
+
+}
+
+.sidebar .menu{
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+
+.sidebar .new-chat{
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #E5EAF1;
+    border-radius: 50px;
+    font-size: 14px;
+    color: grey;
+    cursor: pointer;
+}
+
+
+
+.sidebar .recent{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .recent-title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.sidebar .recent-entry{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 50px;
+    color: #444546;
+    cursor: pointer;
+}
+
+.sidebar .recent-entry:hover {
+    background-color: #E5EAF1;
+    transition: background-color 0.4s ease-in-out;
+  }
+
+  .sidebar .bottom{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+ .sidebar .bottom-item{
+    padding: 10px;
+    cursor: pointer;
+ } 
+
+
+ */
+
+
+
+
+ .sidebar {
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F0F4F9;
+    padding: 25px 15px;
+    transition: all 0.4s ease; /* Smooth transition for sidebar */
+}
+
+.sidebar img {
+    width: 20px;
+}
+
+.sidebar .menu {
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.sidebar .new-chat {
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #E5EAF1;
+    border-radius: 50px;
+    font-size: 14px;
+    color: grey;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar .new-chat:hover {
+    background-color: #d9e0eb; /* Slightly darker on hover */
+    transform: translateX(5px); /* Small sliding effect */
+}
+
+.sidebar .recent {
+    display: flex;
+    flex-direction: column;
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Add transition for entries */
+}
+
+.sidebar .recent-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.sidebar .recent-entry {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 50px;
+    color: #444546;
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+.sidebar .recent-entry:hover {
+    background-color: #E5EAF1;
+    transform: translateX(5px); /* Sliding effect on hover */
+}
+
+.sidebar .bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .bottom-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.sidebar .bottom-item:hover {
+    color: #1A73E8; /* Change color on hover */
+    transform: scale(1.05); /* Slight grow on hover */
+}
+
+/* Menu toggle animation */
+.sidebar.open {
+    transform: translateX(0); /* Sidebar opens by default */
+}
+
+.sidebar.closed {
+    transform: translateX(-100%); /* Sidebar hidden when closed */
+}
