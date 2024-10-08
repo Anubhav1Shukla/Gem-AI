@@ -120,6 +120,7 @@
 .sidebar .recent {
     display: flex;
     flex-direction: column;
+    animation: fadeIn 1.5s;
     transition: opacity 0.4s ease, transform 0.4s ease; /* Add transition for entries */
 }
 
@@ -168,4 +169,11 @@
 
 .sidebar.closed {
     transform: translateX(-100%); /* Sidebar hidden when closed */
+}
+
+
+@media(max-width:600px){
+    .sidebar{
+        display: none;
+    }
 }
